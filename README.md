@@ -1,4 +1,12 @@
 # SecZz Apache Toolkit
+```markdown
+   ___|              __  /               \                         |                __ __|              |  |    _)  |   
+ \___ \    _ \   __|    /  _  /         _ \    __ \    _` |   __|  __ \    _ \         |   _ \    _ \   |  |  /  |  __| 
+       |   __/  (      /     / _____|  ___ \   |   |  (   |  (     | | |   __/ _____|  |  (   |  (   |  |    <   |  |   
+ _____/  \___| \___| ____| ___|      _/    _\  .__/  \__,_| \___| _| |_| \___|        _| \___/  \___/  _| _|\_\ _| \__| 
+                                              _|                                                                        
+
+```
 
 ## Overview
 
@@ -47,12 +55,11 @@ SecZz is an advanced toolkit meticulously crafted to fortify the security of Apa
 
 ## Contributing
 
-If you find a bug, have a feature request, or want to contribute, please open an issue or submit a pull request following the guidelines in [CONTRIBUTING.md](CONTRIBUTING.md).
-Also you can directly contact me, contact details are provided in the project.
+If you find a bug, have a feature request, or want to contribute, please open an issue or you can directly contact me, contact details provided below.
 
 ## Changelog
 
-- **v1.0.0 (Date):**
+- **v1.0.0 (02-02-24):**
   - Initial release.
 
 ## Developer
