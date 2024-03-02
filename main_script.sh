@@ -11,12 +11,22 @@ GREEN='\033[0;32m'
 CYAN='\033[0;36m'
 YELLOW='\033[1;33m'
 
+ascii_art=$(cat << "EOF"
+   ___|              __  /               \                         |                __ __|              |  |    _)  |   
+ \___ \    _ \   __|    /  _  /         _ \    __ \    _` |   __|  __ \    _ \         |   _ \    _ \   |  |  /  |  __| 
+       |   __/  (      /     / _____|  ___ \   |   |  (   |  (     | | |   __/ _____|  |  (   |  (   |  |    <   |  |   
+ _____/  \___| \___| ____| ___|      _/    _\  .__/  \__,_| \___| _| |_| \___|        _| \___/  \___/  _| _|\_\ _| \__| 
+         (Bcoz Ur Security Matters Most)      _|                                      M@d3 With ♥ VirusZzWarning
+EOF
+)
+
+
 print_colored() {
     echo -e "${1}${2}"
 }
-
-print_colored "$CYAN" "Welcome to the ViruszzWarning Security Tool!"
-
+print_colored "$CYAN" "==========================================================================================================================="
+print_colored "$CYAN" "$ascii_art"
+print_colored "$CYAN" "==========================================================================================================================="
 print_colored "$YELLOW" "Please select the location and name of your 'httpd.conf' file."
 filename=$(zenity --file-selection --title="Select httpd.conf file")
 print_colored "$GREEN" "You've chosen '$filename' as your 'httpd.conf' file."
@@ -43,7 +53,7 @@ while true; do
         print_colored "$CYAN" "100. ${CYAN}Give Feedback"
         print_colored "$CYAN" "================================================================="
 
-        read -p "Enter the script number (1-${#scripts[@]}), '99' to exit, or '100' to give feedback: " choice
+        read -p "Enter the script number (1-${#scripts[@]}), '99' to exit: " choice
 
         if [ "$choice" -eq '99' ]; then
             print_colored "$GREEN" "\nThanks for using my tool! Best wishes from ViruszzWarning."
